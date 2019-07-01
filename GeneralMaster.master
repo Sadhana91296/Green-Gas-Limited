@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeneralMaster.master.cs" Inherits="GeneralMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Green Gas Limited</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link href="css/GeneralMaster.css" rel="stylesheet" type="text/css" />
+    <link href="images/download (1).jpg" rel="icon" />
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="outer">
+            <div id="heading"><b>Tel:+7080102006,7080102007 || Email:www.softproindia.org</b></div>
+    <div id="container">
+        <div id="header">
+            <div id="logo" >
+                <img src="images/download (1).jpg" height="130px" width="150px" />
+            </div>
+            <div id="sitetitle"><i>Welcome To Green Gas Limited</i></div>
+        </div>
+        <div id="menu">
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+                <DynamicHoverStyle BackColor="#99CC00" ForeColor="Black" />
+                <DynamicMenuItemStyle BackColor="Black" Font-Bold="True" Font-Size="Small" ForeColor="White" HorizontalPadding="38px" VerticalPadding="8px" />
+                <Items>
+                    <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/Index.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="AREA &amp; INFRASTRUCTURE" Value="AREA &amp; INFRASTRUCTURE">
+                        <asp:MenuItem Text="CNG OUTLET AGRA" Value="CNG OUTLET AGRA" NavigateUrl="~/CNGAgra.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="CNG OUTLET LUCKNOW" Value="CNG OUTLET LUCKNOW" NavigateUrl="~/CNGLucknow.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="CONSUMER REGISTRATION" Value="CONSUMER REGISTRATION" NavigateUrl="~/ConsumerRegistration.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Enquiry.aspx" Text="CONTACT US" Value="CONTACT US"></asp:MenuItem>
+                    <asp:MenuItem Text="IMAGE GALLERY" Value="IMAGE GALLERY" NavigateUrl="~/ImageGallary.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="LOGIN" Value="LOGIN" NavigateUrl="~/login.aspx"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#99CC00" ForeColor="black" />
+                <StaticMenuItemStyle Font-Bold="True" ForeColor="White" HorizontalPadding="30px" VerticalPadding="15px" Font-Size="Small" />
+            </asp:Menu>
+        </div>
+        <div id="main">
+             <div id="Lmain">
+                    <div class="LmainPart"><a href="http://webmail.mailhostbox.com" target="_blank"><img src="images/Email.jpg"  height="50px" width="50px"/><h2 style="color:black;">WEB MAIL</h2></a></div>
+                         <div class="LmainPart"><h1>Quick Links</h1></div>
+                         <div class="LmainPart"><a href="http://www.gailonline.com" target="_blank"><img src="images/GAIL_Logo.svg.png" height="60px" width="60px" /><h5>GAIL(India) Limited</h5></a></div>
+                         <div class="LmainPart"><a href="http://www.iocl.com" target="_blank"><img src="images/Indian_Oil_Logo.png" height="60px" width="60px" /><h5>Indian Oil Corporation Limited</h5></a></div>
+                         <div class="LmainPart"><a href="http://www.petroleum.nic.in" target="_blank"><img src="images/mpang.gif" height="60px" width="60px" /><h5>Ministry of Petroleum & Natural Gas</h5></a></div>
+                         <div class="LmainPart"><a href="http://www.peso.gov" target="_blank"><img src="images/peso.png" height="60px" width="60px" /><h5>Petroleum and Explosives Safety Organisation</h5></a></div>
+                </div>
+            <div id="rmain">
+            <asp:ContentPlaceHolder ID="CPHMain" runat="server">
+
+            </asp:ContentPlaceHolder>
+             </div>
+        </div>
+        </div>
+        <div id="footer">
+            <div class="footer1">
+                <center>
+                    <span style="color:white; font-family:Georgia;font-size:22px; padding-top:30px;"><b>Social Media</b></span><br />
+                    <a href="http://www.facebook.com"><img src="images/1.png" class="a"/></a>
+                    <a href="http://www.twitter.com"><img src="images/2.png" class="a"/></a>
+                    <a href="http://www.liked.com"><img src="images/3.png" class="a"/></a>
+                    <a href="http://www.youtube.com"><img src="images/4.png" class="a"/></a>
+                </center>
+            </div>
+            <div class="footer1">
+                <div class="footerSelf" style="padding-top:40px; ">Developed By: <span style="color:#b2ee30;">Sadhana Singh</span></div>
+                <div class="footerSelf"><img src="images/IMG_20160708_164351 - Copy.jpg" style="height:135px;border:2px solid green;
+                    border-radius:2px 2px 2px 2px;"/></div>
+            </div>
+        </div>
+        <div id="footerbase">
+            <div class="footerbase1"></div>
+                <div class="footerbase1">
+                   Copyright &copy; To : <a href="http://www.softproindia.org" style="text-decoration:none; color:#b2ee30;">Softpro India Computer Technologies (P) Ltd.</a>
+                </div>
+        </div>
+            </div>
+    </form>
+</body>
+</html>

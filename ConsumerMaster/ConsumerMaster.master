@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ConsumerMaster.master.cs" Inherits="ConsumerMaster_ConsumerMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Green Gas Limited</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    
+    <link href="../css/ConsumerMasterStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../images/download (1).jpg" rel="icon" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="top"><b>Tel:+7080102006,7080102007 || Email:www.softproindia.org</b></div>
+        <div id="outer">
+            <div id="header">
+                <div id="logo">
+                    <img src="../images/download (1).jpg" height="150px" width="150px" />
+                </div>
+                <div id="sitetitle"><i>Welcome To Green Gas Limited</i></div>
+                <div id="UPic">
+                    <asp:Image ID="UserPic" runat="server" />
+                    <asp:Label ID="UserName" runat="server"></asp:Label>
+                </div>
+            </div>
+            <div id="menu" >
+                <asp:Menu ID="menu1" runat="server" Orientation="Horizontal" style="background-color:black;" StaticEnableDefaultPopOutImage="False">
+                    <DynamicHoverStyle BackColor="#99CC00" ForeColor="black" />
+                    <DynamicMenuItemStyle BackColor="Black" Font-Bold="False" ForeColor="White" HorizontalPadding="8px" VerticalPadding="6px" BorderStyle="Ridge" />
+                    <Items>
+                        <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/ConsumerMaster/home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="REQUEST FOR GAS" Value="REQUEST FOR GAS" NavigateUrl="~/ConsumerMaster/RequestForGas.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="CONSUMER'S REVIEW" Value="CONSUMER'S REVIEW" NavigateUrl="~/ConsumerMaster/consumerreview.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="BOOKING STATUS" Value="BOOKING STATUS" NavigateUrl="~/ConsumerMaster/BookingStatus.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="FEEDBACK" Value="FEEDBACK" NavigateUrl="~/ConsumerMaster/FeedBack.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="SETTING" Value="SETTING">
+                            <asp:MenuItem Text="MY PROFILE" Value="MY PROFILE" NavigateUrl="~/ConsumerMaster/MyProfile.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="CHANGE PASSWORD" Value="CHANGE PASSWORD" NavigateUrl="~/ConsumerMaster/changepassword.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="LOGOUT" Value="LOGOUT" NavigateUrl="~/ConsumerMaster/Logout.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#99CC00" ForeColor="black" />
+                    <StaticMenuItemStyle Font-Size="Medium" ForeColor="White" HorizontalPadding="25px" BackColor="Black" VerticalPadding="12px" />
+                </asp:Menu>
+            </div>
+            <div id="main">
+                <div id="Lmain">
+                    <div class="LmainPart"><a href="http://webmail.mailhostbox.com" target="_blank"><img src="../images/Email.jpg"  height="50px" width="50px"/><h2>WEB MAIL</h2></a></div>
+                         <div class="LmainPart"><h1>Quick Links</h1></div>
+                         <div class="LmainPart"><a href="http://www.gailonline.com" target="_blank"><img src="../images/GAIL_Logo.svg.png" height="60px" width="60px" /><h5>GAIL(India) Limited</h5></a></div>
+                         <div class="LmainPart"><a href="http://www.iocl.com" target="_blank"><img src="../images/Indian_Oil_Logo.png" height="60px" width="60px" /><h5>Indian Oil Corporation Limited</h5></a></div>
+                         <div class="LmainPart"><a href="http://www.petroleum.nic.in" target="_blank"><img src="../images/mpang.gif" height="60px" width="60px" /><h5>Ministry of Petroleum & Natural Gas</h5></a></div>
+                         <div class="LmainPart"><a href="http://www.peso.gov" target="_blank"><img src="../images/peso.png" height="60px" width="60px" /><h5>Petroleum and Explosives Safety Organisation</h5></a></div>
+                </div>
+                <div id="heading">
+                    <asp:ContentPlaceHolder ID="CPHHeading" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="CPHContent" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+                </div>
+            <div id="footer">
+                <div class="fpart">
+                    Copyright &copy; To: <a href="http://www.softproindia.org" target="_blank" style="color:#b2ee30;">Softpro India Computer Technologies (P) Ltd.</a>
+                </div>
+                <div class="fpart" style="padding-left:90px; ">Developed By: <span style="color:#b2ee30; ">Sadhana Singh Rajput</span></div>
+            </div>
+    
+        </div>
+    </form>
+</body>
+</html>

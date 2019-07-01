@@ -1,0 +1,176 @@
+﻿body
+{
+    background-color:rgba(0, 128, 0, 0.84);
+   
+}
+*
+{
+    margin:0px;
+    padding:0px;
+}
+#outer
+{
+    height:auto;
+    width:1100px;
+    background-color:rgba(102, 230, 87, 0.94);
+    margin:0px auto;
+    box-shadow:3px 3px 25px gray;
+}
+#heading
+{
+    height:24px;
+    width:480px;
+    background-color:#99CC00;
+    box-shadow:3px 3px 3px gray;
+    color:white;
+    font-size:15px;
+    font-family:Arial;
+    padding-top:6px;
+    padding-left:620px;
+}
+#container
+{
+    height:auto;
+    min-height:1000px;
+    width:1000px;
+    padding-bottom:10px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:10px;
+    background-color:white;
+}
+#header
+{
+    height:130px;
+    width:1000px;
+    border-color:green;
+    background-color:white;
+    
+}
+#logo
+{
+    height:130px;
+    width:150px;
+    float:left;
+    
+    border-radius:15px 0px 0px 15px;
+}
+#sitetitle
+{
+    height:110px;
+    width:810px;
+    float:left;
+    padding-top:20px;
+    padding-left:40px;
+    text-align:center;
+    font-size:60px;
+    text-shadow:2px 2px 2px gray;
+    color:green;
+    background-color:white;
+}
+#menu
+{
+    height:50px;
+    width:1000px;
+    background-color:black;
+       box-shadow:3px 3px 25px black inset;
+       font-family:Arial;
+       margin-bottom:3px;      
+}
+#main
+{
+    height:auto;
+    min-height:620px;
+    width:1000px;
+    font-size:18px;
+    font-family:Arial;
+   float:left;
+   margin-top:30px;
+}
+#Lmain
+{
+    height:660px;
+    width:148px;
+    float:left;
+    border:1px solid #DCDCDC;
+    margin-top:5px;
+}
+.LmainPart
+{
+    height:100px;
+    width:147px;
+    padding-top:0px;
+    padding-top:5px;
+    text-align:center;
+}
+    .LmainPart a
+    {
+        text-decoration:none;
+        color:black;
+        font-family:Arial;
+    }
+#rmain
+{
+  height:auto;
+   min-height:700px;
+    width:775px;
+    font-size:18px;
+    font-family:Arial;
+   float:left;
+   margin-left:25px;
+   margin-top:3px;
+}
+#slider
+{
+    height:300px;
+    width:1000px;
+   
+}
+#footer
+{
+    height:150px;
+    width:1100px;
+    background-color:gray;
+    box-shadow:3px 3px 80px black inset; 
+}
+.footer1
+{
+    height:140px;
+    width:550px;
+    float:left;
+    padding-top:10px;
+}
+.footerSelf
+{
+    height:140px;
+    width:250px;
+    float:left;
+    font-size:17px;
+    font-family:Century;
+    color:white;
+    text-shadow:2px 2px 5px green;
+}
+.a
+{
+    border-radius:50px;
+}
+#footerbase
+{
+    height:30px;
+    width:1100px;
+    background-color:black; 
+    padding-top:10px; 
+}
+.footerbase1
+{
+    height:30px;
+    width:550px;
+    float:left;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    font-size:20px;
+}
+body
+{
+    background-color:green;
+}
